@@ -15,8 +15,8 @@ from PyQt5.QtWidgets import QApplication, QMainWindow
 from PyQt5.QtWidgets import QMessageBox, QFileDialog
 # from PyQt5.QtCore import *
 from Get_Data import *
-from File_Operate import *
-from PDF_Operate import *
+# from File_Operate import *
+# from PDF_Operate import *
 from Sap_Function import *
 from Sap_Operate_Ui import Ui_MainWindow
 from Data_Table import *
