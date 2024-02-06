@@ -180,7 +180,7 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
             newData = Get_Data()
             file_data = newData.getFileData(fileUrl)
             order_list = list(file_data['Order No'])
-            if not self.checkBox_16.isChecked():
+            if not self.checkBox.isChecked():
                 sap_obj = Sap()
             i = 1
             for orderNo in order_list:
@@ -189,7 +189,7 @@ class MyMainWindow(QMainWindow, Ui_MainWindow):
                     log_list['Order No'] = orderNo
                     log_list['Type'] = flag
 
-                    if self.checkBox_16.isChecked():
+                    if self.checkBox.isChecked():
                         sap_obj = Sap()
                     sap_obj.open_va02(orderNo)
                     lock_res = sap_obj.unlock_or_lock_order(flag)
